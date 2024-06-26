@@ -1,0 +1,7 @@
+pandoc --standalone -p -f docx -t html -o article.html input.docx
+pandoc --standalone -p -f html -t jats -o article.xml article.html
+pandoc --standalone -p -f docx -t jats -o article.xml input.docx
+pandoc --standalone -Np -f docx -t jats -o article.xml input.docx
+
+
+Styled documents are working
